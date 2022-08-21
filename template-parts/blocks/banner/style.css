@@ -1,0 +1,106 @@
+section.banner {
+  position: relative;
+  padding: 135px 0;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+}
+
+section.banner > .container {
+  max-width: 1088px;
+}
+
+section.banner .btn {
+  padding: 22px 33px;
+}
+
+section.banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+section.banner .leaves {
+  transform: scaleX(-1);
+}
+
+section.banner .leaves-wrapper .container.ta--right .leaves {
+  transform: scaleX(1);
+}
+
+section.banner .leaves-wrapper {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+section.banner::after {
+  content: "";
+  background-image: url(../../../assets/img/banner-overlay.svg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+/*
+* Popup
+*/
+
+.popup {
+  display: none;
+  overflow-y: auto;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 2;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.popup .form-wrapper {
+  max-width: 610px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 200px 0px;
+  padding: 91px 108px;
+}
+
+.popup .form-wrapper h3 {
+  color: #1a1817;
+  margin-bottom: 33px;
+}
+
+.popup .form-wrapper .input-wrap span.label {
+  transition: all 0.2s ease-in-out;
+  background-color: #fff;
+}
+
+.popup .form-wrapper .input-wrap.focused span.label {
+  font-size: 14px;
+  transform: translateY(-27px);
+}
+
+@media (max-height: 611.98px) {
+  .popup .form-wrapper {
+    height: fit-content;
+    padding: 48px 108px;
+  }
+}
+
+@media (min-height: 612px) {
+  .popup {
+    align-items: center;
+  }
+}
+
+@media (min-height: 766px) {
+  .popup .form-wrapper {
+    height: 765px;
+  }
+}

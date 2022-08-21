@@ -1,0 +1,47 @@
+.c-404 .container{
+  padding-top: 176px;
+  padding-bottom: 139px;
+}
+
+.c-404,
+.c-404 .container {
+  position: relative;
+}
+
+.c-404__title,
+.c-404__sub-title {
+  font-family: Montserrat-SemiBold;
+}
+
+.c-404__title {
+  font-size: 123px;
+  color: #ffc508;
+  margin-bottom: 23px;
+}
+
+.c-404__sub-title {
+  margin-bottom: 7px;
+}
+
+.c-404__message {
+  margin-bottom: 44px;
+}
+
+.c-404 .leaves {
+  position: absolute;
+  bottom: 0;
+  left: 24px;
+  transform: scalex(-1);
+}
+.c-404 .object {
+  position: absolute;
+  right: 0;
+  top: 126px;
+  bottom: 0;
+  width: 206px;
+  z-index: -1;
+  background-image: url(../../img/background-object.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  opacity: 0.25;
+}

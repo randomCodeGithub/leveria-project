@@ -1,0 +1,40 @@
+section.requisites {
+  background: transparent linear-gradient(106deg, #fbf7f6 0%, #f3efee 100%) 0%
+    0% no-repeat padding-box;
+}
+
+section.requisites .requisites {
+  padding: 0 112px 0 132px;
+}
+
+section.requisites .requisites p.large {
+  font-family: Montserrat-Medium;
+  margin-bottom: 6px;
+}
+
+section.requisites .container {
+  position: relative;
+  padding: 96px 0;
+}
+
+section.requisites .leaves {
+  position: absolute;
+  right: 25px;
+  bottom: 4px;
+}
+
+@media (max-width: 1099.98px) {
+  section.requisites .container {
+    padding: 65px 0;
+    padding-bottom: 96px;
+  }
+
+  section.requisites .requisites {
+    padding: 0 20px 0 20px;
+  }
+
+  section.requisites .leaves {
+    right: 21px;
+    width: 200px;
+  }
+}

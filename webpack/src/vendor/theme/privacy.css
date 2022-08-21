@@ -1,0 +1,31 @@
+section.privacy .col-12 {
+  padding: 0;
+}
+
+.page-title {
+  margin-bottom: 3rem;
+}
+
+section.privacy p + h1,
+section.privacy p + h2,
+section.privacy p + h3,
+section.privacy p + h4 {
+  margin-top: 2rem;
+}
+
+section.privacy h1,
+section.privacy h2,
+section.privacy h3,
+section.privacy h4,
+section.privacy .col-12 p {
+  margin-bottom: 1rem;
+}
+
+section.privacy h3 {
+  font-size: 21px;
+}
+
+section.privacy .col-12 a {
+  color: #fff;
+  text-decoration: underline;
+}

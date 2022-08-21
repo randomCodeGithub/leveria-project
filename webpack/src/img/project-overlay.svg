@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="392" height="250" viewBox="0 0 392 250">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffc508"/>
+    </linearGradient>
+  </defs>
+  <path id="Projekts_Overlay_2" data-name="Projekts Overlay 2" d="M100,0H392a0,0,0,0,1,0,0V150A100,100,0,0,1,292,250H0a0,0,0,0,1,0,0V100A100,100,0,0,1,100,0Z" opacity="0.7" fill="url(#linear-gradient)"/>
+</svg>

@@ -1,0 +1,338 @@
+section.hero {
+  min-height: 768px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.hero.padding-top-normal {
+  padding-top: 11.1rem;
+}
+
+section.hero.padding-top-small {
+  padding-top: 9.2rem;
+}
+
+section.hero,
+section.hero .container {
+  position: relative;
+}
+
+section.hero .container {
+  z-index: 1;
+}
+
+section.hero .overlay,
+section.hero .overlay-2,
+section.hero .overlay-3,
+section.hero .overlay-4 {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+section.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.hero .overlay {
+  width: 48.5%;
+  background-image: url(../../../assets/img/hero-overlay.svg);
+  opacity: 1;
+}
+
+section.hero .overlay-2 {
+  background-image: url(../../../assets/img/hero-overlay-2.svg);
+  width: 100%;
+  opacity: 1;
+}
+
+section.hero .overlay-3 {
+  background-image: url(../../../assets/img/hero-overlay-3.svg);
+  width: 100%;
+}
+section.hero .overlay-4 {
+  background-image: url(../../../assets/img/hero-overlay-4.svg);
+  width: 100%;
+  opacity: 1;
+}
+
+section.hero,
+section.hero a {
+  color: #fff;
+}
+
+/* section.hero .text-wrapper {
+  max-width: 390px;
+  width: 100%;
+} */
+
+section.hero h1 {
+  margin-bottom: 1rem;
+}
+
+section.hero .btn {
+  margin-top: 45px;
+  padding: 18px 43px;
+}
+
+section.hero .item-block {
+  background: transparent
+    linear-gradient(122deg, #ffde08 0%, #ffc508 31%, #ffad08 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 0px 75px;
+  padding: 35px 33px;
+  margin-top: 88px;
+  min-height: 248px;
+}
+
+section.hero .item-block h4 {
+  margin-bottom: 8px;
+}
+
+section.hero .item-block i {
+  font-size: 70px;
+}
+
+section.hero .single-item {
+  width: 481px;
+  min-height: 190px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 125px;
+  padding-right: 105px;
+  padding-top: 28px;
+  background: transparent
+    linear-gradient(111deg, #ffde08 0%, #ffc508 31%, #ffad08 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 0px 150px;
+  z-index: 2;
+}
+
+section.hero .single-item .single-item__title strong {
+  font-family: Montserrat-SemiBold;
+  font-size: 42px;
+  line-height: 61px;
+  margin-right: 9px;
+}
+
+section.hero .single-item i {
+  position: absolute;
+  top: 34px;
+  left: 34px;
+  font-size: 60px;
+}
+
+section.hero .single-item .single-item__text {
+  font-family: Montserrat-Medium;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+section.hero .single-item .single-item__title {
+  font-family: Montserrat-Light;
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+}
+
+/*
+*Item on hover
+*/
+
+section.hero .item-block.item-text-hidden {
+  position: relative;
+  border-radius: 0px 75px 100px;
+  transition: border-radius 0.2s ease-in-out;
+}
+
+section.hero .item-block.item-text-hidden:hover:before,
+section.hero .item-block.item-text-hidden:hover {
+  background: #ffffff;
+}
+
+section.hero .item-block.item-text-hidden:hover:before {
+  transition-delay: 0.2s;
+}
+
+section.hero .item-block.item-text-hidden:hover {
+  position: relative;
+  border-bottom-right-radius: 0;
+}
+
+section.hero .item-block.item-text-hidden::before,
+section.hero .item-block.item-text-hidden::after {
+  position: absolute;
+  z-index: -1;
+}
+
+section.hero .item-block.item-text-hidden::before {
+  content: "";
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #ff9c08;
+}
+
+section.hero .item-block.item-text-hidden::after {
+  content: "\e909";
+  font-family: "leveria-icons";
+  right: 10px;
+  bottom: 3px;
+}
+
+section.hero .item-block.item-text-hidden p {
+  position: absolute;
+  color: #1a1817;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 34px 27px;
+  visibility: none;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+section.hero .item-block.item-text-hidden:hover p {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 1099.98px) {
+  section.hero {
+    min-height: 581px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.hero.padding-top-normal {
+    padding-top: 88px;
+  }
+  section.hero .btn {
+    margin-top: 27px;
+  }
+
+  section.hero .single-item {
+    max-width: 338px;
+    min-height: 136px;
+    padding: 0 94px;
+    padding-right: 22px;
+    padding-top: 15px;
+    border-radius: 0px 100px;
+    position: relative;
+    margin-left: auto;
+    margin-top: auto;
+  }
+
+  section.hero .single-item .single-item__title {
+    font-size: 21px;
+    margin-bottom: 0;
+  }
+
+  section.hero .single-item .single-item__title strong {
+    font-size: 27px;
+    line-height: 40px;
+  }
+
+  section.hero .single-item .single-item__text {
+    font-size: 16px;
+  }
+
+  section.hero .single-item i {
+    top: 18px;
+    font-size: 38px;
+  }
+
+  section.hero .row.items {
+    margin-top: 50px;
+    padding-bottom: 48px;
+  }
+
+  section.hero .item-block {
+    margin-top: 0;
+    border-radius: 0px 50px;
+    padding: 24px 24px;
+    padding-bottom: 18px;
+    min-height: 192px;
+    height: auto;
+    margin-bottom: 25px;
+  }
+
+  section.hero .item-block i {
+    font-size: 48px;
+  }
+
+  section.hero .item-block i.ic--pieredze,
+  section.hero .item-block.item-text-hidden i {
+    font-size: 59px;
+  }
+
+  section.hero .item-block i.ic--projekti {
+    font-size: 61px;
+  }
+
+  section.hero .item-block h4 {
+    margin-bottom: 2px;
+  }
+
+  section.hero .item-block.item-text-hidden {
+    border-radius: 0px 50px 100px;
+    min-height: 182px;
+  }
+
+  section.hero .item-block.item-text-hidden p {
+    padding: 18px 25px;
+  }
+
+  section.hero .overlay {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  section.hero .btn {
+    width: 100%;
+  }
+
+  section.hero .text-wrapper br {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  section.hero .single-item {
+    margin-top: 53px;
+  }
+}
+
+@media (min-width: 1100px) {
+  section.hero .item-block.item-text-hidden {
+    margin-top: 52px;
+  }
+}
+
+/*
+* Safari
+*/
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    @media (min-width: 1200px) {
+      section.hero .item-block:not(.item-text-hidden) h4 {
+        font-weight: 400;
+      }
+    }
+  }
+}
