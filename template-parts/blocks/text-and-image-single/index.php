@@ -9,7 +9,7 @@ if (is_admin()) return; ?>
                     <div class="image-wrapper">
                         <div class="image-inner">
                             <?php
-                            pdg_img($image, array(392, 612), array(
+                            pdg_img($image, array(792, 1012), array(
                                 'crop' => false,
                             )); ?>
                             <div class="overlay"></div>
